@@ -51,7 +51,6 @@ footer {
 .ms_middle,
 .ms_right {
   padding: 20px;
-  background-color: red;
   width: 400px;
 
 }
@@ -59,6 +58,18 @@ footer {
 .ms_middle {
   display: flex;
   flex-direction: column;
+}
+
+.ms_top_menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.ms_top_menu li {
+  padding: 10px;
 }
 
 /* eliminare */
@@ -77,6 +88,12 @@ main {
 .ms_conted {
   background-color: yellow;
   height: 100%;
+  overflow-y: auto;
+}
+
+.ms_items {
+  display: flex;
+
 }
 
 footer {
@@ -90,6 +107,12 @@ footer {
 
 .ms_nav_playlist {
   padding: 20px;
-  height: 500px;
-  min-height: 200px;
+  min-height: 300px;
+}
+
+.ms_item {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  margin: 10px;
 }
