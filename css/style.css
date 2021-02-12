@@ -20,21 +20,62 @@ ul li {
   height: 100vh;
 }
 
+.ms_container {
+  width: 90%;
+  margin-left: 5%;
+}
+
 /* main */
 main {
   height: calc(100% - 100px);
 }
 
-
 .ms_nav {
   float: left;
   width: 15%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.ms_conted {
+.ms_nav_playlist {
+  flex-shrink: 2;
+  overflow-y: auto;
+  flex-grow: 2;
+  min-height: 100px;
+  flex-shrink: 1;
+}
+
+.ms_main_conted {
   float: left;
   width: calc(100% - 15%);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.ms_main_header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 15%;
+}
+
+.ms_top_menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.ms_top_menu li {
+  padding: 10px;
+}
+
+.ms_items {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -60,18 +101,6 @@ footer {
   flex-direction: column;
 }
 
-.ms_top_menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 70px;
-  padding: 20px;
-}
-
-.ms_top_menu li {
-  padding: 10px;
-}
-
 /* eliminare */
 .ms_wrapped {
   background-color: red;
@@ -85,14 +114,8 @@ main {
   background-color: blue;
 }
 
-.ms_conted {
+.ms_main_conted {
   background-color: yellow;
-  height: 100%;
-  overflow-y: auto;
-}
-
-.ms_items {
-  display: flex;
 
 }
 
@@ -103,16 +126,25 @@ footer {
 .ms_nav_logo {
   padding: 20px;
   height: 150px;
+  border: 1px solid black;
 }
 
 .ms_nav_playlist {
   padding: 20px;
-  min-height: 300px;
+  border: 1px solid black;
+}
+
+.ms_nav_3 {
+  border: 1px solid black;
 }
 
 .ms_item {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color: green;
   margin: 10px;
+}
+
+.ms_main_header {
+  background-color: black;
 }
