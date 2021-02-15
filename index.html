@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotifyweb</title>
@@ -11,108 +14,152 @@
     <div class="ms_wrapped">
       <!-- inizio main -->
       <main>
-        <!-- inizio nav sinistra -->
+        <!-- inizio navbar sinistra -->
         <div class="ms_nav">
-          <div class="ms_nav_logo">
-            <div class="logo">
-              <h1>logo</h1>
+          <div class="ms_nav_logo ms_padding_tb">
+            <div class="ms_logo_small">
+              <img class=" hidden-sm hidden-md hidden-lg" src="img/favicon.ico" alt="">
             </div>
-            <nav>
-              <ul>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-              </ul>
-            </nav>
+            <div class="ms_logo">
+              <img class="hidden-xs" src="img/logo.svg" alt="">
+            </div>
           </div>
-          <div class="ms_nav_playlist">
+          <div class="ms_nav_menu">
+            <ul>
+              <li> <a href="#"> <img src="img/home.svg" alt=""> <span class="hidden-xs">home</span> </a> </li>
+              <li> <a href="#"> <img src="img/search.svg" alt=""> <span class="hidden-xs">cerca</span> </a> </li>
+              <li> <a href="#"> <img src="img/libreria.svg" alt=""> <span class="hidden-xs">la tua libreria</span> </a> </li>
+            </ul>
+          </div>
+          <div class="ms_nav_playlist ms_padding_tb ">
             <div class="ms_conted hidden-xs">
-              titolo
-              <nav>
+              <h5>PLAYLIST</h5>
+              <a href="#">
+                <div class="ms_new_playlist">
+                  <div class="ms_add">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                  <div class="ms_text">
+                    <span>Crea Playlist</span>
+                  </div>
+                </div>
+              </a>
+              <nav class="ms_padding_tb">
                 <ul>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
+                  <li> <a href="#">Nome playlist</a> </li>
+                  <li> <a href="#">Nome playlist</a> </li>
+                  <li> <a href="#">Nome playlist</a> </li>
+                  <li> <a href="#">Nome playlist</a> </li>
+                  <li> <a href="#">Nome playlist</a> </li>
+                  <li> <a href="#">Nome playlist</a> </li>
+                  <li> <a href="#">Nome playlist</a> </li>
                 </ul>
               </nav>
             </div>
           </div>
-          <div class="ms_nav_3">
-            <p>lorem ipsum</p>
+          <div class="ms_nav_user">
+            <div class="ms_download">
+              <a href="#">
+                <img src="img/download.svg" alt="">
+                <span>Installa app</span>
+              </a>
+            </div>
             <hr>
-            <p>lorem ipsum</p>
+            <div class="ms_profile">
+              <img src="img/profile.svg" alt="">
+              <span> <strong>John Doe</strong></span>
+
+            </div>
 
           </div>
 
         </div>
-        <!-- fine nav sinistra -->
+        <!-- fine navbar sinistra -->
         <!-- inizio parte centrale -->
         <div class="ms_main_conted">
           <div class="ms_main_header">
+            <a class="ms_button_style" href="#">EFFETTUA L'UPGRADE</a>
+
           </div>
           <div class="ms_container">
             <div class=" row ms_main_top">
               <ul class="ms_top_menu">
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
+                <li> <a href="#">IN EVIDENZA </a> </li>
+                <li> <a href="#">PODCAST</a> </li>
+                <li> <a href="#">CLASSIFICHE</a> </li>
+                <li> <a href="#">GENERI E MOOD</a> </li>
+                <li> <a href="#">NUOVE USCITE</a> </li>
+                <li> <a href="#">SCOPRI</a> </li>
+
               </ul>
             </div>
             <div class="row ms_row_title">
-              <h1>title</h1>
+              <h2>Recently Played</h2>
             </div>
             <div class="row ms_items">
               <div class="ms_item">
-                img
+                <img src="img/metal_lifting.jpg" alt="">
+                <div class="ms_item_text">
+                  <p>Heavy metal</p>
+                  <p>Subtitle</p>
+
+                </div>
               </div>
               <div class="ms_item">
-                img
+                <img src="img/stranger.jpeg" alt="">
+                <div class="ms_item_text">
+                  <p>Heavy metal</p>
+                </div>
               </div>
               <div class="ms_item">
-                img
+                <img src="img/aquietplace.jpeg" alt="">
+                <div class="ms_item_text">
+                  <p>Heavy metal</p>
+                </div>
               </div>
               <div class="ms_item">
-                img
+                <img src="img/split.jpeg" alt="">
+                <div class="ms_item_text">
+                  <p>Heavy metal</p>
+                </div>
               </div>
               <div class="ms_item">
-                img
+                <img src="img/cure.jpeg" alt="">
+                <div class="ms_item_text">
+                  <p>Heavy metal</p>
+                </div>
               </div>
               <div class="ms_item">
-                img
+                <img src="img/sinister.jpeg" alt="">
+                <div class="ms_item_text">
+                  <p>Heavy metal</p>
+                </div>
               </div>
             </div>
             <div class="row ms_row_title">
-              <h1>title</h1>
+              <h2>Creato per John Doe</h2>
+              <p>Più ascolti, più accurati saranno i suggerimenti</p>
             </div>
             <div class="row ms_items">
               <div class="ms_item">
-                img
+                <img src="img/radar.jpeg" alt="">
+                <p>Release Radar</p>
               </div>
               <div class="ms_item">
-                img
+                <img src="img/mixdaily.jpeg" alt="">
+                <p>Daily mix 1</p>
               </div>
             </div>
             <div class="row ms_row_title">
-              <h1>title</h1>
+              <h2>Artisti più popolari</h2>
+              <p>Più ascolti, più accurati saranno i suggerimenti</p>
             </div>
             <div class="row ms_items">
               <div class="ms_item">
-                img
+                <img src="img/youg.jpeg" alt="">
               </div>
               <div class="ms_item">
-                img
+                <img src="img/einaudi.jpeg" alt="">
               </div>
             </div>
           </div>
@@ -124,19 +171,57 @@
       <!-- inizio footer -->
       <footer>
         <div class="ms_left">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          <div class="ms_left_img">
+            <img src="img/sinister.jpeg" alt="">
+          </div>
+          <div class="ms_left_title">
+            <p> <strong>Sinister</strong> </p>
+            <p>Brano Nome</p>
+          </div>
+          <div class="ms_left_icon">
+            <i class="far fa-heart"></i>
+            <i class="far fa-folder"></i>
+          </div>
         </div>
-        <div class="ms_middle container">
-          <div class="row">
-            lorem ipsum
+        <div class="ms_middle">
+          <div class="ms_player">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
           </div>
-          <div class="row">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-          </div>
+          <div class="ms_player_bar">
+            <div class="ms_time">
+              <span>0:25</span>
 
+            </div>
+            <div class="ms_bar">
+              <div class="ms_green_bar">
+
+
+              </div>
+
+
+            </div>
+            <div class="ms_time">
+              <span>4:35</span>
+            </div>
+          </div>
         </div>
         <div class="ms_right">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          <div class="ms_right_icons">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+          </div>
+          <div class="ms_bar">
+            <div class="ms_green_bar">
+
+
+            </div>
+
+          </div>
         </div>
 
       </footer>
