@@ -50,7 +50,6 @@ main {
 }
 
 /* navbar sinistra */
-
 .ms_nav {
   float: left;
   width: 200px;
@@ -164,11 +163,9 @@ main {
   width: 90%;
   margin: 5px 0;
 }
-
 /* fine navbar */
 
 /* inizio main conted */
-
 .ms_main_conted {
   float: left;
   width: calc(100% - 200px);
@@ -187,14 +184,19 @@ main {
   right: 0;
   left: 200px;
   z-index: 2;
+  background-color: #0000006e;
 }
-
 
 .ms_button_style {
   border: 1px solid white;
   padding: 10px 30px;
   border-radius: 30px;
   margin-right: 50px;
+}
+.ms_button_style:hover {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
 }
 
 .ms_top_menu {
@@ -209,7 +211,6 @@ main {
   padding: 10px;
   color: #A3A3A3;
 }
-
 .ms_top_menu li a:hover {
   color: white;
   text-decoration: none;
@@ -217,6 +218,7 @@ main {
 
 .ms_top_menu li {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .ms_top_menu li:first-child a::after {
@@ -234,6 +236,7 @@ main {
 }
 
 .ms_item {
+  margin: 10px;
   flex-basis: calc(100% / 6 - 20px);
 }
 
@@ -293,13 +296,11 @@ main {
   border-radius: 100%;
   overflow: hidden;
 }
-
+/* fine main conted */
 
 /* footer */
 footer {
   position: fixed;
-  display: flex;
-  justify-content: space-between;
   bottom: 0;
   right: 0;
   left: 0;
@@ -308,20 +309,32 @@ footer {
   z-index: 3;
 }
 
+.ms_player_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .ms_left,
 .ms_middle,
 .ms_right {
   display: flex;
   padding: 20px;
-  width: 50%;
 }
 
-.ms_left {
-    align-items: center;
+.ms_middle {
+  flex-basis: 50%;
+  flex-direction: column;
+}
+
+.ms_left,
+.ms_right {
+  flex-basis: 25%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .ms_left_img img {
-  width: 50px;
+  width: 60px;
 }
 
 .ms_left_title {
@@ -340,10 +353,6 @@ footer {
   color: white;
 }
 
-.ms_left_icon {
-  margin-left: 30px;
-}
-
 .ms_left_icon i {
   padding: 0 5px;
   color: #A3A3A3;
@@ -351,10 +360,6 @@ footer {
 }
 .ms_left_icon i:hover {
   color: white;
-}
-
-.ms_middle {
-  flex-direction: column;
 }
 
 .ms_middle i {
@@ -376,6 +381,10 @@ footer {
 .ms_player i:nth-child(3) {
   font-size: 2.5em;
   padding: 5px 25px;
+  animation: 1s;
+}
+.ms_player i:nth-child(3):hover {
+  transform: scale(1.3);
 }
 
 .ms_player_bar {
@@ -399,7 +408,6 @@ footer {
   height: 4px;
   background-color: white;
 }
-
 .ms_bar:hover .ms_green_bar {
   background-color: #ADFF2F;
 }
@@ -413,11 +421,6 @@ footer {
 
 .ms_bar:hover i {
   visibility: visible;
-}
-
-.ms_right {
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .ms_right_icons i {
@@ -441,8 +444,8 @@ footer {
 }
 
 /* mobile phone */
+@media screen and (max-width:767px) {
 
-@media screen and (max-width:768px) {
   .ms_nav {
     width: 50px;
   }
@@ -458,32 +461,27 @@ footer {
   .ms_item {
     flex-basis: calc(100% / 2 - 20px);
   }
-}
 
+  .ms_player_wrapper {
+    font-size: 0.9em;
+  }
 
+  .ms_middle,
+  .ms_right,
+  .ms_left {
+    padding: 20px 0;
+  }
 
-/* eliminare */
-.ms_wrapped {
-  background-color: red;
-}
+  .ms_player i {
+    font-size: 1em;
+  }
 
+  .ms_player i:nth-child(3) {
+    font-size: 1.5em;
+    padding: 5px;
+  }
 
-.ms_nav_logo {
-  border: 1px solid black;
-}
-
-.ms_nav_playlist {
-  border: 1px solid black;
-}
-
-.ms_nav_user {
-  border: 1px solid black;
-}
-
-.ms_item {
-  margin: 10px;
-}
-
-.ms_main_header {
-  background-color: #0000006e;
+  .ms_bar {
+    width: 40%;
+  }
 }
